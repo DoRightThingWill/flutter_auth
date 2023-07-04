@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1069564701923",
+    "project_id": "hao-lin-ju",
+    "storage_bucket": "hao-lin-ju.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069564701923:android:0ebb72189ea1ff8c2629d6",
+        "android_client_info": {
+          "package_name": "com.example.flutter_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069564701923-bbtgooaianl90uaedivumvunba3rfj7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdYzDhdA4JmaS5LHLPLaa1RsAwbCApunU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069564701923-bbtgooaianl90uaedivumvunba3rfj7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
