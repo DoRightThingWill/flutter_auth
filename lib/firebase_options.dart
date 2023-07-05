@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,40 +49,21 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDATb0RUGG3-OqvXPfcPSdKoUBu_SNGExY',
-    appId: '1:1069564701923:web:5009917c94ba02a82629d6',
-    messagingSenderId: '1069564701923',
-    projectId: 'hao-lin-ju',
-    authDomain: 'hao-lin-ju.firebaseapp.com',
-    storageBucket: 'hao-lin-ju.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBdYzDhdA4JmaS5LHLPLaa1RsAwbCApunU',
-    appId: '1:1069564701923:android:0ebb72189ea1ff8c2629d6',
-    messagingSenderId: '1069564701923',
-    projectId: 'hao-lin-ju',
-    storageBucket: 'hao-lin-ju.appspot.com',
+    apiKey: 'AIzaSyDH-1KGDWfrD57v1yLQRkaLu5S6sPE4Zak',
+    appId: '1:446878250781:android:38c6b51d80e00e24c953f4',
+    messagingSenderId: '446878250781',
+    projectId: 'hao-lin-ju-will',
+    storageBucket: 'hao-lin-ju-will.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDcdlmqMAwWt5bqjDLb_e4gCZsH5VyU1OI',
-    appId: '1:1069564701923:ios:cb3246f61122e25e2629d6',
-    messagingSenderId: '1069564701923',
-    projectId: 'hao-lin-ju',
-    storageBucket: 'hao-lin-ju.appspot.com',
-    iosClientId: '1069564701923-t56ggc875ae4d6lsp41vvkddf0fk9ber.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB68oNx6-af-uM0y-wDTEtQ56slMhITmtA',
+    appId: '1:446878250781:ios:e404fa641416c60bc953f4',
+    messagingSenderId: '446878250781',
+    projectId: 'hao-lin-ju-will',
+    storageBucket: 'hao-lin-ju-will.appspot.com',
+    iosClientId: '446878250781-fuhi6h62bhrgo3vkcrje5sdvlk6sekn3.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterAuth',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDcdlmqMAwWt5bqjDLb_e4gCZsH5VyU1OI',
-    appId: '1:1069564701923:ios:b6ce5890d46021e62629d6',
-    messagingSenderId: '1069564701923',
-    projectId: 'hao-lin-ju',
-    storageBucket: 'hao-lin-ju.appspot.com',
-    iosClientId: '1069564701923-jsfah4a9dcadbrd4bvnru4itg7b4linj.apps.googleusercontent.com',
-    iosBundleId: 'com.example.flutterAuth.RunnerTests',
   );
 }

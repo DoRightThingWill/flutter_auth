@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "1069564701923",
-    "project_id": "hao-lin-ju",
-    "storage_bucket": "hao-lin-ju.appspot.com"
+    "project_number": "446878250781",
+    "project_id": "hao-lin-ju-will",
+    "storage_bucket": "hao-lin-ju-will.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1069564701923:android:0ebb72189ea1ff8c2629d6",
+        "mobilesdk_app_id": "1:446878250781:android:38c6b51d80e00e24c953f4",
         "android_client_info": {
           "package_name": "com.example.flutter_auth"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1069564701923-bbtgooaianl90uaedivumvunba3rfj7l.apps.googleusercontent.com",
+          "client_id": "446878250781-aer71a1j8ehgvuluvte0fikpnrl8bjen.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBdYzDhdA4JmaS5LHLPLaa1RsAwbCApunU"
+          "current_key": "AIzaSyDH-1KGDWfrD57v1yLQRkaLu5S6sPE4Zak"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1069564701923-bbtgooaianl90uaedivumvunba3rfj7l.apps.googleusercontent.com",
+              "client_id": "446878250781-aer71a1j8ehgvuluvte0fikpnrl8bjen.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "446878250781-fuhi6h62bhrgo3vkcrje5sdvlk6sekn3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterAuth"
+              }
             }
           ]
         }

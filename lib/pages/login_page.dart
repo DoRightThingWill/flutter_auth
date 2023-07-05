@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_auth/components/my_button.dart';
 import 'package:flutter_auth/components/my_textfield.dart';
 import 'package:flutter_auth/components/square_tile.dart';
+import 'package:flutter_auth/services/auth_service.dart';
 
 class LoginPage extends StatefulWidget {
   final Function()? onTap;
@@ -73,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
 
                 // welcome back, you've been missed
                 Text(
-                  'Welcome back, you\'ve been missed!',
+                  'Welcome back , you\'ve been missed!',
                   style: TextStyle(
                     color: Colors.grey[700],
                     fontSize: 16,
@@ -147,12 +148,15 @@ class _LoginPageState extends State<LoginPage> {
 
                 // google + wechat login button
                 const SizedBox(height: 50),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SquareTile(imagePath: 'lib/images/google_logo.png'),
+                    SquareTile(
+                        onTap: () => AuthService().signInWithGoogle(),
+                        imagePath: 'lib/images/google_logo.png'),
                     SizedBox(width: 25),
-                    SquareTile(imagePath: 'lib/images/wechat_logo.png'),
+                    SquareTile(
+                        onTap: () {}, imagePath: 'lib/images/wechat_logo.png'),
                   ],
                 ),
 
